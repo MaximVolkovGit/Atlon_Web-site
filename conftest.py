@@ -11,3 +11,11 @@ def driver():
     driver.get(BasicUrls.HOME)
     yield driver
     driver.quit()
+
+@pytest.fixture
+def home_page(driver):
+    """Фикстура для создания HomePage объекта"""
+    from pages.home_page import HomePage
+    page = HomePage(driver)
+    page.open()
+    return page

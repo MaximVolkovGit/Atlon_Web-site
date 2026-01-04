@@ -1,6 +1,5 @@
-# pages/home_page.py
 from .base_page import BasePage
-from locators.locators import MainPageLocators  # Исправленный импорт
+from locators.locators import MainPageLocators
 from data.urls import BasicUrls
 
 class HomePage(BasePage):
@@ -75,7 +74,31 @@ class HomePage(BasePage):
     
     def search_for(self, text):
         """Выполнить поиск по тексту"""
-        search_input = self.find_element(MainPageLocators.SEARCH_INPUT)
-        search_input.clear()
-        search_input.send_keys(text)
+        self.input_text(MainPageLocators.SEARCH_INPUT, text)
         self.click_element(MainPageLocators.SEARCH_BUTTON)
+    
+    # Методы для кликов по блокам услуг
+    
+    def click_service_renga(self):
+        self.click_element(MainPageLocators.SERVICE_RENGA)
+    
+    def click_service_bim_learning(self):
+        self.click_element(MainPageLocators.SERVICE_BIM_LEARNING)
+    
+    def click_service_bim_projecting(self):
+        self.click_element(MainPageLocators.SERVICE_BIM_PROJECTING)
+    
+    def click_service_smeta_programs(self):
+        self.click_element(MainPageLocators.SERVICE_SMETA_PROGRAMS)
+    
+    def click_service_project_programs(self):
+        self.click_element(MainPageLocators.SERVICE_PROJECT_PROGRAMS)
+    
+    def click_service_advokat(self):
+        self.click_element(MainPageLocators.SERVICE_ADVOKAT)
+    
+    def click_service_distant_learning(self):
+        self.click_element(MainPageLocators.SERVICE_DISTANT_LEARNING)
+    
+    def click_service_smeta_courses(self):
+        self.click_element(MainPageLocators.SERVICE_SMETA_COURSES)

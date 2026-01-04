@@ -17,3 +17,13 @@ class MainPageLocators:
     ACCEPT_COOKIES_BUTTON = (By.ID, "accept-cookies")               # Кнопка принятия куки
     MENU_SERVICES_LINK = (By.CSS_SELECTOR, ".menu ul.level-0 li a[href='/katalog1/']")     # Ссылка "Услуги" в меню
 
+    SERVICE_RENGA = (By.XPATH, "//div[contains(@class, 'category_title_bottom')]//a[text()='Renga. Поставка и сопровождение']")
+    SERVICE_BIM_LEARNING = (By.XPATH, "//div[contains(@class, 'category_title_bottom')]//a[text()='Обучение работе с BIM']")
+    SERVICE_BIM_PROJECTING = (By.XPATH, "//div[contains(@class, 'category_title_bottom')]//a[text()='BIM-проектирование. Сметы по BIM']")
+    SERVICE_SMETA_PROGRAMS = (By.XPATH, "//div[contains(@class, 'category_title_bottom')]//a[text()='Программы для сметно-строительного комплекса']")
+    SERVICE_PROJECT_PROGRAMS = (By.XPATH, "//div[contains(@class, 'category_title_bottom')]//a[text()='Программы для проектно-изыскательных работ']")
+    SERVICE_ADVOKAT = (By.XPATH, "//div[contains(@class, 'category_title_bottom')]//a[text()='Адвокат в кармане']")
+    SERVICE_DISTANT_LEARNING = (By.XPATH, "//div[contains(@class, 'category_title_bottom')]//a[text()='Образовательные услуги дистанционно']")
+    
+    # Локатор для отдельного блока "Обучение сметному делу"
+    SERVICE_SMETA_COURSES = (By.XPATH, "//div[contains(@class, 'object_title_bottom')]//a[text()='Обучение сметному делу']")
