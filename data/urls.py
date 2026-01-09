@@ -20,3 +20,7 @@ class ServicesCatalogUrls:
     ADVOKAT = "https://ooo-atlon.ru/katalog1/advokat_v_karmane1/"                     # # Адвокат в кармане
     DISTANT_COURSES = "https://ooo-atlon.ru/katalog1/obrazovatel_nye_uslugi_distancionno/"  # Образовательные услуги дистанционно
     SMETA_COURSES = "https://ooo-atlon.ru/katalog1/kursy_smetchikov/"                 # Обучение сметному делу
+
+class RengaURLS:
+    RENGA_STANDART_URL = "https://ooo-atlon.ru/katalog1/renga_postavka_i_soprovozhdenie/vozmozhnosti_renga_standard/"
+    RENGA_PROFESSIONAL_URL = "https://ooo-atlon.ru/katalog1/renga_postavka_i_soprovozhdenie/vozmozhnosti_renga_professional/"
