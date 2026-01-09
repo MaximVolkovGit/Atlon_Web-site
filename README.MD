@@ -6,18 +6,18 @@
 
 Atlon_Web-site/
 conftest.py # Фикстуры Pytest (настройка драйвера)
-data/
-    urls.py # URL тестируемых страниц
-locators/
-    locators.py # Локаторы элементов страниц
-pages/
-    base_page.py # Базовый класс страницы
-    home_page.py # Класс главной страницы
-    renga_page.py # Класс страницы Renga
-tests/
-    test_home_page.py # Тесты главной страницы
-    test_urls_check.py # Тесты переходов по услугам
-    test_renga_page.py # Тесты страницы Renga
+-data/
+-    urls.py # URL тестируемых страниц
+-locators/
+-    locators.py # Локаторы элементов страниц
+-pages/
+-    base_page.py # Базовый класс страницы
+-    home_page.py # Класс главной страницы
+-    renga_page.py # Класс страницы Renga
+-tests/
+-    test_home_page.py # Тесты главной страницы
+-    test_urls_check.py # Тесты переходов по услугам
+-    test_renga_page.py # Тесты страницы Renga
 
 ## 🎯 Тестируемые страницы
 
