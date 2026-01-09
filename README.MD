@@ -5,23 +5,19 @@
 ## 📁 Структура проекта
 
 Atlon_Web-site/
-├── conftest.py # Фикстуры Pytest (настройка драйвера)
-├── data/
-│ ├── init.py
-│ └── urls.py # URL тестируемых страниц
-├── locators/
-│ ├── init.py
-│ └── locators.py # Локаторы элементов страниц
-├── pages/
-│ ├── init.py
-│ ├── base_page.py # Базовый класс страницы
-│ ├── home_page.py # Класс главной страницы
-│ └── renga_page.py # Класс страницы Renga
-└── tests/
-├── init.py
-├── test_home_page.py # Тесты главной страницы
-├── test_urls_check.py # Тесты переходов по услугам
-└── test_renga_page.py # Тесты страницы Renga
+conftest.py # Фикстуры Pytest (настройка драйвера)
+data/
+    urls.py # URL тестируемых страниц
+locators/
+    locators.py # Локаторы элементов страниц
+pages/
+    base_page.py # Базовый класс страницы
+    home_page.py # Класс главной страницы
+    renga_page.py # Класс страницы Renga
+tests/
+    test_home_page.py # Тесты главной страницы
+    test_urls_check.py # Тесты переходов по услугам
+    test_renga_page.py # Тесты страницы Renga
 
 ## 🎯 Тестируемые страницы
 
@@ -47,15 +43,15 @@ Atlon_Web-site/
 ## Набор тестов
 
 ### `test_home_page.py` - Тесты главной страницы
-**Класс:** `TestHomePageElements` - Проверка отображения элементов на главной странице
-**Класс:** `TestHomePageContent` - Проверка содержания элементов
-**Класс:** `TestHomePageFunctionality` - Проверка функциональности элементов
+- **Класс:** `TestHomePageElements` - Проверка отображения элементов на главной странице
+- **Класс:** `TestHomePageContent` - Проверка содержания элементов
+- **Класс:** `TestHomePageFunctionality` - Проверка функциональности элементов
 
 ### `test_urls_check.py` - Тесты переходов по услугам
-**Класс:** `TestServicesNavigation` - Параметризованная проверка корректности переходов в блоке "Услуги"
+- **Класс:** `TestServicesNavigation` - Параметризованная проверка корректности переходов в блоке "Услуги"
 
-### 🏗️ `test_renga_page.py` - Тесты страницы Renga
-**Класс:** `TestRengaPageNavigation` - Проверка переходов со страницы Renga на дочерние страницы
+### `test_renga_page.py` - Тесты страницы Renga
+- **Класс:** `TestRengaPageNavigation` - Проверка переходов со страницы Renga на дочерние страницы
 
 
 ## 🚀 Установка и запуск
